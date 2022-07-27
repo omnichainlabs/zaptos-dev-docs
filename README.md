@@ -1,13 +1,13 @@
 # Zaptos Developer Docs
 Zaptos Liquid Staking contracts allow the user to deposit stake, which is pushed to a validator to earn yield. 
 
-We recommend wallets implement stake and unstake on the main screen and unstake_now and withdraw on a dropdown.
-
 # Contract Addresses
 `Staked Aptos Coin Contract = 0xe8f59d770be479176888276a5e658058d93e7aa6eefe272641115984951e3391::st_aptos_coin`
 
 `Stake Contract Address = 0xe8f59d770be479176888276a5e658058d93e7aa6eefe272641115984951e3391::zaptos_stake`
+
 # API
+We recommend integrating teams implement all four functions. We recommend stake and unstake on the main screen and unstake_now and withdraw on a dropdown.
 
 **Stake**
 `public(script) fun stake(user_account: &signer,  amount: u64  )`
