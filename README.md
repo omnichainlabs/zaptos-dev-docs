@@ -1,10 +1,12 @@
 # Zaptos Developer Docs
 Zaptos Liquid Staking contracts allow the user to deposit stake, which is pushed to a validator to earn yield.
+# Contract Addresses
+`Staked Aptos Coin Contract = 0xe8f59d770be479176888276a5e658058d93e7aa6eefe272641115984951e3391::st_aptos_coin`
 
+`Stake Contract Address = 0xe8f59d770be479176888276a5e658058d93e7aa6eefe272641115984951e3391::zaptos_stake`
 # API Specs
 
 **Stake**
-
 `public(script) fun stake(user_account: &signer,  amount: u64  )`
 
 	user_account == signer depositing funds
@@ -14,8 +16,7 @@ This call withdraws aptos from the wallet and deposits it into the protocol. Sta
 
 
 **Unstake**
-
-`public(script) fun unstake(user_account: &signer,  amount: u64  )`
+`public(script) fun stake(user_account: &signer,  amount: u64  )`
 
 	user_account == signer depositing funds
 	Amount == amount of staked aptos coins to withdraw 
@@ -25,18 +26,18 @@ This call withdraws Staked Aptos from the wallet and deposits it into the protoc
 
 *The following functions are still in testing but will be added soon:*
 
-**Unstake Now**
 
-`public(script) fun unstake_now(user_account: &signer,  amount: u64  )`
+**Unstake_Immediately**
+`public(script) fun stake(user_account: &signer,  amount: u64  )`
 
 	user_account == signer depositing funds
 	Amount == total staked Aptos coins to be withdrawn from the user_account 
 
 This call withdraws money from the protocol liquidity pool to withdraw Aptos immediately. This typically costs a 0.3% - 3% fee.  Staked Aptos is withdrawn from the wallet and Aptos is deposited in the wallet. The *exchange rate* = total aptos in Zaptos / total staked aptos outstanding.
 
-**Withdraw**
 
-`public(script) fun withdraw(  user_account: &signer,  amount: u64  )`
+**Withdraw**
+`public(script) fun unstake(  user_account: &signer,  amount: u64  )`
 
 This call withdraws money from the protocol liquidity pool to withdraw Aptos immediately. This typically costs a 0.3% - 3% fee. The *exchange rate* = total aptos in Zaptos / total staked aptos outstanding.
 
