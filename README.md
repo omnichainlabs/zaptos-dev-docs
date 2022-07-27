@@ -24,6 +24,7 @@ This call withdraws Staked Aptos from the wallet and deposits it into the protoc
 
 
 *The following functions are still in testing but will be added soon:*
+
 **Unstake_Immediately**
 
 `public(script) fun stake(user_account: &signer,  amount: u64  )`
