@@ -4,7 +4,7 @@ Zaptos Liquid Staking contracts allow the user to deposit stake, which is pushed
 `Staked Aptos Coin Contract = 0xe8f59d770be479176888276a5e658058d93e7aa6eefe272641115984951e3391::st_aptos_coin`
 
 `Stake Contract Address = 0xe8f59d770be479176888276a5e658058d93e7aa6eefe272641115984951e3391::zaptos_stake`
-# API Specs
+# API
 
 **Stake**
 `public(script) fun stake(user_account: &signer,  amount: u64  )`
