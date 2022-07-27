@@ -16,6 +16,7 @@ This call withdraws aptos from the wallet and deposits it into the protocol. Sta
 
 
 **Unstake**
+
 `public(script) fun stake(user_account: &signer,  amount: u64  )`
 
 	user_account == signer depositing funds
@@ -28,6 +29,7 @@ This call withdraws Staked Aptos from the wallet and deposits it into the protoc
 
 
 **Unstake_Immediately**
+
 `public(script) fun stake(user_account: &signer,  amount: u64  )`
 
 	user_account == signer depositing funds
@@ -37,6 +39,7 @@ This call withdraws money from the protocol liquidity pool to withdraw Aptos imm
 
 
 **Withdraw**
+
 `public(script) fun unstake(  user_account: &signer,  amount: u64  )`
 
 This call withdraws money from the protocol liquidity pool to withdraw Aptos immediately. This typically costs a 0.3% - 3% fee. The *exchange rate* = total aptos in Zaptos / total staked aptos outstanding.
