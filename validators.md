@@ -10,4 +10,4 @@ Aptos blockchain requires `OwnersCapability` on the validator in order to deposi
 
 Contract updates require a multisig approval from Aptos Labs, Zaptos Team, and OtterSec (leading auditing firm). 
 
-We also require that validator partners set the stake times on their validator to 2 weeks. This is to synch
+We also require that validator partners set the stake times on their validator to 2 weeks.
